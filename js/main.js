@@ -1,9 +1,8 @@
-// 🔹 همه import ها بالای فایل
 import initMobileMenu from "./hero.js";
-import { initInfiniteLogos } from "./infiniteLogos.js";
+import { initInfiniteLogos } from "./partners.js";
 
 
-// 🔹 بعد منطق اجرا
+
 document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu({
     btnOpen: ".hamburgerMenu",
