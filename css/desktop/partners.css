@@ -1,0 +1,28 @@
+.partners {
+  padding: 70px  50px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  .title {
+    font-size: 45px;
+  }
+  .logos-wrapper {
+    width: 70%;
+    .brandLogos {
+      .logo {
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

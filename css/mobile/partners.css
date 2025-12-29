@@ -1,0 +1,43 @@
+.partners {
+  overflow: hidden;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  .title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-family: vazir;
+    color: var(--white);
+    font-size: 25px;
+    line-height: 1.6;
+  }
+  .logos-wrapper {
+    width: 100%;
+    overflow: hidden;
+    .brandLogos {
+      display: flex;
+      width: max-content;
+      animation: scroll 20s linear infinite;
+      .logo {
+        flex: 0 0 auto;
+        padding: 40px;
+        box-sizing: border-box;
+        img {
+          width: 60px;
+          opacity: 1;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
