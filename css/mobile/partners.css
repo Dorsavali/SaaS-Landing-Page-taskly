@@ -2,13 +2,13 @@
   overflow: hidden;
   padding: 40px 20px;
   box-sizing: border-box;
-  background-color: var(--primary-color);
+  background-color: var(--white);
   .title {
     text-align: center;
     margin-bottom: 24px;
     font-weight: bold;
     font-family: vazir;
-    color: var(--white);
+    color: var(--text-main);
     font-size: 25px;
     line-height: 1.6;
   }
