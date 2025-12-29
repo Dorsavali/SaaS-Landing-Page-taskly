@@ -1,0 +1,103 @@
+.tasklyHero {
+  position: unset;
+  padding: 30px 50px ;
+  header {
+    width: 100%;
+    justify-content: start;
+    gap: 90px;
+    .logo {
+      gap: 15px;
+      font-size: 25px;
+      cursor: pointer;
+      img {
+        width: 70px;
+      }
+    }
+    nav {
+      .hamburgerMenu {
+        img {
+          display: none;
+        }
+      }
+
+      .menu {
+        ul {
+          position: unset;
+          right: 0;
+          width: unset;
+          height: unset;
+          flex-direction: row;
+          gap: 40px;
+          background:unset;
+          padding: unset;
+          margin: 0;
+          list-style: none;
+          z-index: 1000;
+          transition:unset;
+          box-shadow:unset;
+          &.show {
+          }
+          .closeMenu {
+            display:none;
+            img {
+            }
+          }
+          li{
+            cursor: pointer;
+            a {
+             &:hover {
+             }
+           }
+          }
+        }
+      }
+    }
+  }
+  .overlay {
+   display: none;
+    &.show {
+    }
+  }
+  .body-hero {
+    padding: 20px 80px;
+    gap: 0px;
+    flex-flow: row-reverse nowrap;
+    .img-hero {
+      width: 590px;
+      img {
+      }
+    }
+    .text-hero {
+      gap: 35px;
+      align-items: start;
+      .title-hero {
+        font-size: 45px;
+      }
+      .description-hero {
+        width: 70%;
+        font-size: 22px;
+        line-height: 38px;
+        text-align: right;
+      }
+      .buttons-hero {
+        justify-content: start;
+        gap: 30px;
+        .cta1,
+        .cta2 {
+          a {
+            padding: 12px 24px;
+            font-size: 20px;
+          }
+        }
+        .cta1 {
+          &:hover {
+          }
+        }
+        .cta2 {
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}
