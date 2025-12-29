@@ -2,7 +2,8 @@
   overflow: hidden;
   padding: 40px 20px;
   box-sizing: border-box;
-  background-color: var(--white);
+  background-color: var(--accent);
+
   .title {
     text-align: center;
     margin-bottom: 24px;
