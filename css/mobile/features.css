@@ -66,7 +66,7 @@
         transition: var(--transition-smooth);
 
         img {
-          width: 96px;
+          width: 200px;
           transition: var(--transition-smooth);
         }
 

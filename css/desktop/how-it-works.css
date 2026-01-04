@@ -1,25 +1,31 @@
 .how-it-works {
-  padding: 100px 50px;
+  padding: 120px ;
+
   .section-title {
     font-size: 45px;
     margin-bottom: 64px;
   }
+
   .steps {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
+
   .step-card {
     padding: 32px 28px;
     border-radius: 20px;
+
     .step-number {
       width: 44px;
       height: 44px;
       font-size: 18px;
       margin-bottom: 20px;
     }
+
     .step-title {
       font-size: 18px;
     }
+
     .step-text {
       font-size: 15px;
     }
