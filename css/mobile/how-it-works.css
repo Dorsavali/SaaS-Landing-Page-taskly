@@ -1,0 +1,84 @@
+.how-it-works {
+  background-color: var(--white);
+  padding: 40px 20px;
+  box-sizing: border-box;
+  direction: rtl;
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 40px;
+    font-family: vazir;
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .step-card {
+    position: relative;
+    background-color: var(--bg-main);
+    padding: 24px 20px;
+    border-radius: 18px;
+    transition: var(--transition-smooth);
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(30, 41, 59, 0.127);
+    box-shadow: 0 8px 20px rgba(30, 41, 59, 0.04);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--accent)
+      );
+      opacity: 0.9;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: var(--transition-smooth);
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: rgba(37, 99, 235, 0.1);
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 16px;
+      font-family: vazir;
+    }
+    .step-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      font-family: vazir;
+      text-align: right;
+    }
+    .step-text {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-muted);
+      font-family: vazir;
+      text-align: right;
+    }
+  }
+}
