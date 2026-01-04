@@ -11,8 +11,9 @@
   .title {
     font-family: vazir;
     color: var(--text-main);
-    font-weight: 600;
+    font-weight: bold;
     font-size: 25px;
+    text-align: center;
   }
   .feature-cards {
     display: flex;
