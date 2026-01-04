@@ -1,57 +1,45 @@
 .features {
-  padding: 110px  50px;
+  padding: 120px 0;
   .title {
     font-size: 45px;
+    margin-bottom: 16px;
   }
+
   .feature-cards {
-    width: 100%;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 40px;
+
     .card {
-height: 420px;
-      &::before {
-      }
+      border-radius: 28px;
+
       &:hover {
-        &::before {
-        }
-        .content {
-          .heading,
-          .para {
-          }
-        }
+        transform: translateY(-10px);
       }
+
       .content {
+        padding: 40px 32px;
+        gap: 18px;
+
         img {
+          width: 240px;
         }
+
         .hover {
+          top: 32px;
         }
-        .normal {
+
+        .heading {
+          font-size: 22px;
         }
-      }
-      &:hover {
-        .content {
-          .normal {
-          }
-          .hover {
-          }
+
+        .para {
+          font-size: 16px;
+          line-height: 1.9;
+          max-width: 90%;
         }
-      }
-      .heading {
-        font-size: 30px;
-      }
-      .para {
-      }
-      img {
       }
     }
   }
-  @keyframes moving {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
 }

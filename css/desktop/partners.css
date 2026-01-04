@@ -1,27 +1,22 @@
 .partners {
-  padding: 70px  50px;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 30px;
+  padding: 120px 0;
   .title {
     font-size: 45px;
+    margin-bottom: 48px;
   }
+
   .logos-wrapper {
-    width: 70%;
     .brandLogos {
+      gap: 48px;
+      animation-duration: 32s;
+
       .logo {
+        padding: 20px 32px;
+
         img {
-          width: 80px;
+          width: 88px;
         }
       }
     }
-  }
-}
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
   }
 }

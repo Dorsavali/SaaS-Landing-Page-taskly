@@ -1,39 +1,88 @@
 .partners {
+  padding: 64px 20px;
+  background-color: var(--white);
   overflow: hidden;
-  padding: 40px 20px;
-  box-sizing: border-box;
-  background-color: var(--accent);
-user-select: none;
+  user-select: none;
+
   .title {
-    text-align: center;
-    margin-bottom: 24px;
-    font-weight: bold;
     font-family: vazir;
+    font-size: 22px;
+    font-weight: 700;
     color: var(--text-main);
-    font-size: 25px;
+    text-align: center;
     line-height: 1.6;
+    margin-bottom: 32px;
   }
+
   .logos-wrapper {
+    position: relative;
     width: 100%;
     overflow: hidden;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 60px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    &::before {
+      right: 0;
+      background: linear-gradient(
+        to left,
+        var(--bg-soft),
+        transparent
+      );
+    }
+
+    &::after {
+      left: 0;
+      background: linear-gradient(
+        to right,
+        var(--bg-soft),
+        transparent
+      );
+    }
+
     .brandLogos {
       display: flex;
       width: max-content;
-      animation: scroll 20s linear infinite;
+      align-items: center;
+      gap: 32px;
+      animation: scroll 24s linear infinite;
+      cursor: pointer;
       .logo {
         flex: 0 0 auto;
-        padding: 40px;
-        box-sizing: border-box;
+        padding: 12px 20px;
+        border-radius: 14px;
+        background-color: var(--white);
+        border: 1px solid rgba(30, 41, 59, 0.06);
+        box-shadow: 0 6px 16px rgba(30, 41, 59, 0.04);
+        transition: var(--transition-smooth);
+
         img {
-          width: 60px;
-          opacity: 1;
-          transition: 0.3s;
+          width: 64px;
+          opacity: 0.7;
+          transition: var(--transition-smooth);
+          filter: grayscale(100%);
+        }
+
+        &:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 14px 28px rgba(30, 41, 59, 0.08);
+
+          img {
+            opacity: 1;
+            filter: grayscale(0%);
+          }
         }
       }
     }
   }
 }
-
 @keyframes scroll {
   from {
     transform: translateX(0);
