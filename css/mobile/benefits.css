@@ -4,6 +4,7 @@
   background: var(--bg-soft);
   overflow: hidden;
   color: #fff;
+  user-select: none;
   .bg {
     position: absolute;
     inset: 0;
