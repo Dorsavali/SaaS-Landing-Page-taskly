@@ -1,0 +1,10 @@
+.benefits {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}

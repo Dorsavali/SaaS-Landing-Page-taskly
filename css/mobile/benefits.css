@@ -1,0 +1,108 @@
+.benefits {
+  position: relative;
+  padding: 5rem 1.5rem;
+  background: var(--bg-soft);
+  overflow: hidden;
+  color: #fff;
+  .bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-family: vazir;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--text-main);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: vazir;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+.benefit {
+  background: var(--primary-color);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.367);
+  transition: all 0.4s ease;
+  transform: translateY(30px);
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  .icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--success),#0c875e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    transition: 0.3s;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    font-family: vazir;
+    color: var(--white);
+  }
+
+  .text {
+    font-size: 0.95rem;
+    color: var(--white);
+    line-height: 1.8;
+    font-family: vazir;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: rgba(99, 102, 241, 0.6);
+    box-shadow: 0 20px 60px rgba(99, 101, 241, 0.525);
+
+    .benefit__icon {
+      transform: rotate(-6deg) scale(1.08);
+    }
+  }
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
