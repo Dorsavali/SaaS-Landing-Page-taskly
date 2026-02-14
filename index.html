@@ -13,7 +13,7 @@
   </head>
   <body>
     <main>
-      <div class="tasklyHero">
+      <section class="tasklyHero">
         <header>
           <div class="logo">
             <img src="./assets/images/logoipsum.svg" alt="logo" />
@@ -21,13 +21,16 @@
           </div>
           <nav>
             <div class="menu">
-                <div class="hamburgerMenu">
-                    <img src="./assets/images/hamburgerMenu.svg" alt="hamburgerMenu">
+              <div class="hamburgerMenu">
+                <img
+                  src="./assets/images/hamburgerMenu.svg"
+                  alt="hamburgerMenu"
+                />
+              </div>
+              <ul>
+                <div class="closeMenu">
+                  <img src="./assets/images/close.svg" alt="close" />
                 </div>
-                <ul>
-                  <div class="closeMenu">
-                      <img src="./assets/images/close.svg" alt="close">
-                    </div>
                 <li><a href="#">صفحه اصلی</a></li>
                 <li><a href="#">فروشگاه</a></li>
                 <li><a href="#">مقالات</a></li>
@@ -43,9 +46,7 @@
             <img src="./assets/images/hero.svg" alt="hero" />
           </div>
           <div class="text-hero">
-            <div class="title-hero">
-                مدیریت پروژه‌ها، ساده‌تر از همیشه
-            </div>
+            <div class="title-hero">مدیریت پروژه‌ها، ساده‌تر از همیشه</div>
             <div class="description-hero">
               تسکلی به شما کمک می‌کند پروژه‌ها، وظایف و تیم‌تان را در یک محیط
               ساده و حرفه‌ای مدیریت کنید.
@@ -55,16 +56,15 @@
                 <a href="#"> شروع رایگان </a>
               </button>
               <button class="cta2">
-                <a href="#"> مشاهده دمو </a></button>
+                <a href="#"> مشاهده دمو </a>
+              </button>
             </div>
+          </div>
         </div>
-        </div>
-      </div>
-      <div class="partners">
-        <div class="title">
-          مورد اعتماد بیش از ۵۰۰ تیم و استارتاپ ایرانی
-        </div>
-      
+      </section>
+      <section class="partners">
+        <div class="title">مورد اعتماد بیش از ۵۰۰ تیم و استارتاپ ایرانی</div>
+
         <div class="logos-wrapper">
           <div class="brandLogos">
             <div class="logo"><img src="./assets/images/brand1.svg" /></div>
@@ -77,34 +77,56 @@
             <div class="logo"><img src="./assets/images/brand4.svg" /></div>
           </div>
         </div>
-      </div>
-      <div class="features">
+      </section>
+      <section class="features">
         <div class="title">همه چیز برای مدیریت حرفه‌ای تیم</div>
         <div class="feature-cards">
           <div class="card">
             <div class="content">
-              <img src="./assets/images/office.svg" alt="office" class="normal">
-              <img src="./assets/images/officeHover.svg" alt="office" class="hover">
+              <img
+                src="./assets/images/office.svg"
+                alt="office"
+                class="normal"
+              />
+              <img
+                src="./assets/images/officeHover.svg"
+                alt="office"
+                class="hover"
+              />
               <p class="heading">مدیریت وظایف</p>
               <p class="para">
-                وظایف را ایجاد کنید و به اعضای تیم دهید و پیشرفت آن‌ها را به‌صورت لحظه‌ای ببینید
+                وظایف را ایجاد کنید و به اعضای تیم دهید و پیشرفت آن‌ها را
+                به‌صورت لحظه‌ای ببینید
               </p>
             </div>
           </div>
           <div class="card">
             <div class="content">
-              <img src="./assets/images/team.svg" alt="office" class="normal">
-              <img src="./assets/images/teamHover.svg" alt="office" class="hover">
+              <img src="./assets/images/team.svg" alt="office" class="normal" />
+              <img
+                src="./assets/images/teamHover.svg"
+                alt="office"
+                class="hover"
+              />
               <p class="heading">همکاری تیمی</p>
               <p class="para">
-                اعضای تیم می‌توانند نظر بدهند، فایل ارسال کنند و بدون سردرگمی همکاری کنند
+                اعضای تیم می‌توانند نظر بدهند، فایل ارسال کنند و بدون سردرگمی
+                همکاری کنند
               </p>
             </div>
           </div>
           <div class="card">
             <div class="content">
-              <img src="./assets/images/report.svg" alt="office" class="normal">
-              <img src="./assets/images/reportHover.svg" alt="office" class="hover">
+              <img
+                src="./assets/images/report.svg"
+                alt="office"
+                class="normal"
+              />
+              <img
+                src="./assets/images/reportHover.svg"
+                alt="office"
+                class="hover"
+              />
               <p class="heading">گزارش‌گیری هوشمند</p>
               <p class="para">
                 وضعیت پروژه‌ها را با گزارش‌های دقیق و قابل فهم بررسی کنید
@@ -112,11 +134,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="how-it-works">
+      </section>
+      <section class="how-it-works">
         <div class="container">
           <h2 class="section-title">در ۳ مرحله شروع کنید</h2>
-      
+
           <div class="steps">
             <div class="step-card">
               <span class="step-number">۱</span>
@@ -125,15 +147,13 @@
                 در کمتر از یک دقیقه حساب کاربری خود را بسازید.
               </p>
             </div>
-      
+
             <div class="step-card">
               <span class="step-number">۲</span>
               <h3 class="step-title">پروژه و وظایف را بسازید</h3>
-              <p class="step-text">
-                پروژه‌ها را ایجاد و وظایف را مدیریت کنید.
-              </p>
+              <p class="step-text">پروژه‌ها را ایجاد و وظایف را مدیریت کنید.</p>
             </div>
-      
+
             <div class="step-card">
               <span class="step-number">۳</span>
               <h3 class="step-title">تیم‌تان را دعوت کنید</h3>
@@ -143,10 +163,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="benefits">
         <div class="bg"></div>
-      
         <div class="container">
           <div class="header">
             <h2 class="title">چرا تسکلی؟</h2>
@@ -154,7 +173,7 @@
               همه چیزهایی که تیم شما برای مدیریت بهتر کارها نیاز دارد
             </p>
           </div>
-      
+
           <div class="grid">
             <div class="benefit reveal">
               <div class="icon">⚡</div>
@@ -163,35 +182,69 @@
                 تمرکز روی کارهای مهم و حذف سردرگمی در بین اعضای تیم
               </p>
             </div>
-      
+
             <div class="benefit reveal">
               <div class="icon">👁</div>
               <h3 class="heading">شفافیت در انجام کارها</h3>
-              <p class="text">
-                مشاهده پیشرفت پروژه‌ها به صورت لحظه‌ای و دقیق
-              </p>
+              <p class="text">مشاهده پیشرفت پروژه‌ها به صورت لحظه‌ای و دقیق</p>
             </div>
-      
+
             <div class="benefit reveal">
               <div class="icon">⏱</div>
               <h3 class="heading">صرفه‌جویی در زمان</h3>
-              <p class="text">
-                کاهش کارهای تکراری و مدیریت بهتر زمان
-              </p>
+              <p class="text">کاهش کارهای تکراری و مدیریت بهتر زمان</p>
             </div>
-      
+
             <div class="benefit reveal">
               <div class="icon">✅</div>
               <h3 class="heading">کاهش خطا و فراموشی</h3>
-              <p class="text">
-                جلوگیری از فراموش شدن تسک‌ها و اشتباهات انسانی
-              </p>
+              <p class="text">جلوگیری از فراموش شدن تسک‌ها و اشتباهات انسانی</p>
             </div>
           </div>
         </div>
       </section>
-      
-      
+      <section class="pricing">
+        <h2 class="section-title">پلن مناسب خودت رو انتخاب کن</h2>
+
+        <div class="pricing-cards">
+          <div class="plan">
+            <div class="badge">رایگان</div>
+            <h3 class="plan-title">Free</h3>
+            <p class="price">۰ تومان</p>
+            <ul class="features">
+              <li>تا ۳ پروژه فعال</li>
+              <li>۵ عضو تیم</li>
+              <li>پشتیبانی پایه</li>
+            </ul>
+            <button class="cta">شروع رایگان</button>
+          </div>
+
+          <div class="plan popular">
+            <div class="badge">محبوب‌ترین</div>
+            <h3 class="plan-title">Pro</h3>
+            <p class="price">۱۹۹,۰۰۰ تومان / ماه</p>
+            <ul class="features">
+              <li>پروژه نامحدود</li>
+              <li>اعضای تیم نامحدود</li>
+              <li>گزارش‌های پیشرفته</li>
+              <li>پشتیبانی سریع</li>
+            </ul>
+            <button class="cta primary">شروع ۷ روز رایگان</button>
+          </div>
+
+          <div class="plan">
+            <div class="badge">سازمانی</div>
+            <h3 class="plan-title">Business</h3>
+            <p class="price">تماس بگیرید</p>
+            <ul class="features">
+              <li>امکانات سفارشی</li>
+              <li>مدیریت دسترسی‌ها</li>
+              <li>پشتیبانی اختصاصی</li>
+            </ul>
+            <button class="cta">درخواست دمو</button>
+          </div>
+        </div>
+      </section>
     </main>
     <script type="module" src="./js/main.js"></script>
   </body>
