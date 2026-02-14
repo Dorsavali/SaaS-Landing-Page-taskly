@@ -1,0 +1,52 @@
+.testimonials {
+  padding: 120px;
+  text-align: right;
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    .section-title {
+      font-size: 40px;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .slider {
+      margin: 0;
+      max-width: unset;
+      width: 60%;
+      .slides {
+        min-height: unset;
+        .slide {
+          padding: 40px 36px;
+          border-radius: 28px;
+          .quote {
+            font-size: 16px;
+            line-height: 2;
+          }
+          .author {
+            .name {
+              font-size: 16px;
+              padding-left: 50px;
+              box-sizing: border-box;
+            }
+
+            .role {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .controls {
+        justify-content: flex-end;
+        margin-top: 24px;
+
+        button {
+          padding: 10px 20px;
+          border-radius: 14px;
+        }
+      }
+    }
+  }
+}
