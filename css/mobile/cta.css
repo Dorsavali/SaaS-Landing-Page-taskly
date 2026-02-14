@@ -1,0 +1,34 @@
+.cta-section {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent));
+  padding: 50px 15px;
+  text-align: center;
+  color: white;
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .cta-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0;
+      font-family: vazir;
+    }
+    .cta-button {
+      padding: 14px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary-color);
+      background-color: var(--white);
+      transition: all 0.3s ease;
+      font-family: vazir;
+    }
+    .cta-button:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+  }
+}

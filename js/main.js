@@ -3,7 +3,8 @@ import { initInfiniteLogos } from "./partners.js";
 import { initBenefitsReveal } from './benefits.js';
 import { initPricing } from "./pricing.js";
 import { initTestimonials } from "./testimonials.js";
-
+import { initFAQ } from "./faq.js";
+import { initCTAButton } from './cta.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu({
@@ -17,4 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initBenefitsReveal();
   initPricing();
   initTestimonials();
+  initFAQ();
+  initCTAButton();
 });
+
