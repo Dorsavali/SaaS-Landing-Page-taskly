@@ -1,5 +1,10 @@
 .cta-section {
-  background: linear-gradient(90deg, var(--primary-color), var(--accent));
+  background: linear-gradient(
+    135deg,
+    #f67d31 0%,
+    #1c4ab0 50%,
+    #10b981 100%
+  );
   padding: 50px 15px;
   text-align: center;
   color: white;
@@ -27,8 +32,8 @@
       font-family: vazir;
     }
     .cta-button:hover {
-      background-color: var(--primary-color);
-      color: var(--white);
+      background-color: var(--success);
+      color: white;
     }
   }
 }

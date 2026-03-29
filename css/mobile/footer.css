@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-flow: column nowrap;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: var(--bg-soft);
+  .copyRight {
+    direction: rtl;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-main);
+    font-family: vazir;
+  }
+  .tags {
+    font-size: 14px;
+    color: var(--text-main);
+    font-family: vazir;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+  }
+}

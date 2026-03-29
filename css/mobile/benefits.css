@@ -50,7 +50,12 @@
 }
 
 .benefit {
-  background: var(--primary-color);
+  background: linear-gradient(
+    135deg,
+    #f67d31 0%,
+    #1c4ab0 50%,
+    #10b981 100%
+  );
   backdrop-filter: blur(20px);
   padding: 2rem;
   border-radius: 20px;
@@ -68,7 +73,6 @@
     width: 55px;
     height: 55px;
     border-radius: 16px;
-    background: linear-gradient(135deg, var(--success),#0c875e);
     display: flex;
     align-items: center;
     justify-content: center;

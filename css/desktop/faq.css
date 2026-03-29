@@ -3,7 +3,6 @@
 
   .container {
     align-items: flex-start;
-
     .section-title {
       font-size: 42px;
       margin-bottom: 48px;
@@ -11,7 +10,7 @@
     }
 
     .faq-list {
-      width: 60%;
+      width: 100%;
     }
 
     .faq-item {

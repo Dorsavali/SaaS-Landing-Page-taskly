@@ -15,7 +15,7 @@
     .slider {
       margin: 0;
       max-width: unset;
-      width: 60%;
+      width: 100%;
       .slides {
         min-height: unset;
         .slide {

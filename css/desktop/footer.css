@@ -1,0 +1,21 @@
+.footer {
+  gap: 40px;
+  padding: 40px 0;
+  .copyRight {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-main);
+    font-family: vazir;
+  }
+  .tags {
+    width: 20%;
+    justify-content: space-between;
+    font-size: 18px;
+  .aboutUs , .call , .rules{
+    transition: 500ms;
+    &:hover{
+      color: var(--primary-color);
+    }
+  }
+  }
+}
